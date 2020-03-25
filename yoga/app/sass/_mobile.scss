@@ -1,0 +1,457 @@
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+        max-width: 600px;
+        min-width: 321px;
+    }
+
+    .header {
+        padding-top: 30px;
+    }
+
+    .header-menu_text {
+        display: none;
+    }
+
+    .pagenation {
+        p {
+            font-size: 20px;
+        }
+
+        span {
+            width: 30px;
+        }
+
+        :nth-of-type(1) {
+            top: 400px;
+        }
+
+        &:nth-of-type(2) {
+            top: 860px;
+        }
+
+        &:nth-of-type(3) {
+            top: 1350px;
+        }
+
+        &:nth-of-type(4) {
+            top: 1900px;
+        }
+
+        &:nth-of-type(5) {
+            top: 2500px;
+        }
+    }
+
+    h1 {
+        font-size: 20vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+    .btn-primary {
+        width: 30px;
+        height: 20px;
+        font-size: 11px;
+    }
+
+    .btn-long {
+        width: 150px;
+        height: 35px;
+        font-size: 10px;
+    }
+
+    //main *******************************************************
+    .main {
+        margin: 0;
+        padding-bottom: 50px;
+
+        h2 {
+            margin-top: 130px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            letter-spacing: 0.26em;
+            padding-left: 30px;
+            //line-height: 110px;
+            margin-top: 27px;
+        }
+
+        &_btn {
+            width: 30px;
+            height: 26px;
+            font-size: 8px;
+
+            i {
+                margin-top: 30%;
+            }
+        }
+
+        &_trialLesson {
+            width: 55%;
+        }
+
+        &_trialLesson-text {
+            font-size: 10px;
+            line-height: 12px;
+            padding-top: 0px;
+            width: 90%;
+        }
+
+        &_footer {
+            display: none;
+        }
+    }
+
+    //classes ****************************************************
+    .classes {
+        max-width: 600px;
+        padding-bottom: 70px;
+        margin: 0 11.5%;
+
+        h3 {
+            margin-bottom: 40px;
+        }
+
+        &_btn {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &_items {
+            flex-direction: column;
+        }
+    }
+
+    .classCard {
+        margin-bottom: 30px;
+
+        &_discription {
+            margin-left: 25px;
+        }
+
+        &_text {
+            margin-top: 15px;
+
+            h5 {
+                margin-bottom: 9px;
+            }
+
+            p:nth-of-type(2) {
+                margin-bottom: 9px;
+            }
+        }
+
+        p {
+            font-size: 10px;
+            line-height: 15px;
+        }
+
+        &_coach {
+            width: 110px;
+            margin-bottom: 20px;
+        }
+
+        &_btn {
+            width: 45px;
+            height: 100%;
+            top: 0;
+
+            i {
+                margin-top: 120%;
+            }
+        }
+    }
+
+    .classes-sideTwo {
+        max-width: 600px;
+
+        img {
+            width: 100%;
+        }
+
+        &_card {
+            height: 100%;
+            flex-wrap: wrap;
+        }
+
+        .classCard_discription {
+            flex-basis: auto;
+            max-width: 100%;
+        }
+    }
+
+    .classes-sideOne {
+        max-width: 600px;
+    }
+
+    // abonements****************************************************
+
+    .abonements {
+        max-width: 600px;
+        margin: 0 11.5%;
+        height: 100%;
+
+        &_time {
+            height: 710px;
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+
+        &_term {
+            width: 240px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        &_card {
+            height: 200px;
+            width: 100%;
+
+            &:hover {
+                height: 200px;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    // trainers ********************************************************
+    .trainers {
+        max-width: 600px;
+        margin: 70px 11.5% 70px 11.5%;
+        padding-bottom: 0px;
+
+        &_list {
+            margin-right: 0px;
+            max-width: 100%;
+        }
+
+        &_footer {
+            margin: 0;
+            position: absolute;
+            top: 95px;
+            width: 100%;
+        }
+
+        &_about {
+            flex-basis: auto;
+            max-width: 100%;
+        }
+
+        h3 {
+            margin-bottom: 40px;
+        }
+
+        &_prev {
+            margin-right: 0;
+            margin-left: -20px;
+        }
+
+        &_next {
+            margin-left: 0;
+            margin-right: -20px;
+            right: 0;
+        }
+
+        &_prev,
+        &_next {
+            width: 15px;
+            height: 30px;
+            position: absolute;
+
+            i {
+                margin-left: 20%;
+                margin-top: 53%;
+            }
+        }
+    }
+
+    .middle {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-left: 0;
+        position: relative;
+    }
+
+    .trainers-card {
+        height: 80px;
+
+        img {
+            height: 100%;
+        }
+
+        &_social {
+            font-size: 9px;
+            padding-top: 0;
+
+            &:nth-of-type(2) {
+                order: 2;
+            }
+        }
+
+        &_content {
+            font-size: 10px;
+
+            &:nth-of-type(1) {
+                margin-right: 10px;
+                padding-top: 10px;
+            }
+
+            &:nth-of-type(2) {
+                order: 1;
+            }
+        }
+
+        &_link {
+            display: none;
+        }
+
+        &_discription {
+            margin-top: 0px;
+            padding-left: 80px;
+            padding-bottom: 0;
+            height: 100%;
+
+            p {
+                margin-right: 30px;
+            }
+
+            p:nth-of-type(1) {
+                padding-left: 0px;
+            }
+        }
+
+        &_inner-social {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+
+        }
+    }
+
+    .discription {
+        &_subtitle {
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 10px;
+            line-height: 18px;
+        }
+
+        p:nth-of-type(1),
+        p:nth-of-type(2),
+        p:nth-of-type(3) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .name {
+        line-height: 15px;
+    }
+
+    .slider-page_wrap {
+        display: none;
+    }
+
+    .trainers_discription {
+        display: block;
+    }
+
+    .trainers_discription--active {
+        display: block;
+    }
+
+    // review *************************************
+    .review {
+        //width: 250px;
+        max-width: 600px;
+        margin: 0 11.5%;
+        background-color: white;
+
+        &_title {
+            margin-bottom: 40px;
+        }
+
+        &_card {
+            padding: 20px 10% 30px 10%;
+        }
+    }
+
+    //footer ********************************************************
+    .footer {
+        width: 100%;
+        height: 550px;
+        flex-direction: column;
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 50px;
+        background-color: white;
+    }
+
+    .contact {
+        order: 1;
+        margin-top: -0px;
+        padding-left: 30px;
+        margin-right: 0;
+
+        p {
+            width: 180px;
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+
+        &_social {
+            margin-right: 0px;
+        }
+    }
+
+    .test {
+
+        width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+
+    }
+
+    .form {
+        &_title {
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        input {
+            width: 250px;
+        }
+
+        button {
+            width: 250px;
+        }
+
+    }
+}

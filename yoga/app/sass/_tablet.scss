@@ -1,0 +1,338 @@
+@media (max-width: 1451px) {
+    body {
+        background-size: cover;
+        max-width: 768px;
+        padding-bottom: 0;
+    }
+
+    .header {
+        padding-top: 30px;
+    }
+
+    .pagenation {
+        p {
+            font-size: 20px;
+        }
+
+        span {
+            width: 30px;
+        }
+
+        :nth-of-type(1) {
+            top: 400px;
+        }
+
+        &:nth-of-type(2) {
+            top: 860px;
+        }
+
+        &:nth-of-type(3) {
+            top: 1350px;
+        }
+
+        &:nth-of-type(4) {
+            top: 1900px;
+        }
+
+        &:nth-of-type(5) {
+            top: 2500px;
+        }
+    }
+
+    h1 {
+        font-size: 14vw;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+    .btn-primary {
+        width: 30px;
+        height: 20px;
+        font-size: 11px;
+    }
+
+    .btn-long {
+        width: 150px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    // header *****************************************************
+    .header a {
+        margin-right: 15px;
+        font-size: 12px;
+        color: #8B7EAC;
+    }
+
+    .header-menu {
+        left: 15px;
+
+        li {
+            font-size: 12px;
+        }
+    }
+
+    //main *******************************************************
+    .main {
+        margin: 0;
+
+        &_btn {
+            width: 45px;
+            height: 35px;
+            display: block;
+            i {
+                margin-top: 17%;
+            }
+        }
+
+        &_trialLesson-text {
+            display: block;
+            padding-top: 0px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        h2 {
+            margin-top: 130px;
+            font-size: 2.5vw;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        &_footer {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+
+    // classes *****************************************************
+    .classes {
+        max-width: 625px;
+        padding-bottom: 120px;
+
+        &_btn {
+            font-size: 10px;
+            height: 40px;
+            margin-top: 35px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .classCard {
+        &_text {
+            margin-top: 15px;
+
+            h5 {
+                margin-bottom: 9px;
+            }
+
+            p:nth-of-type(2) {
+                margin-bottom: 9px;
+            }
+        }
+
+        p {
+            font-size: 10px;
+            line-height: 15px;
+        }
+
+        &_coach {
+            width: 110px;
+        }
+
+        &_btn {
+            &--big {
+                width: 45px;
+                height: 100%;
+
+                i {
+                    margin-top: 120%;
+                }
+            }
+        }
+    }
+
+    .classes-sideTwo {
+        max-width: 350px;
+
+        img {
+            width: 40%;
+        }
+
+        &_card {
+            height: 120px;
+        }
+
+        .classCard_discription {
+            flex-basis: 60%;
+            max-width: 190px;
+        }
+    }
+
+    .classes-sideOne {
+        max-width: 247px;
+    }
+
+    // abonements****************************************************
+
+    .abonements {
+        max-width: 625px;
+        height: 310px;
+
+        &_term {
+            margin-top: 25px;
+            margin-bottom: 40px;
+        }
+
+        &_card {
+            padding: 10px 20px 20px;
+            height: 160px;
+            width: 175px;
+
+            &:hover {
+                height: 220px;
+            }
+        }
+    }
+
+    // trainers ********************************************************
+    .trainers {
+        max-width: 625px;
+        margin-top: 100px;
+        padding-bottom: 50px;
+
+        &_list {
+            margin-right: 40px;
+        }
+
+        &_footer {
+            margin-left: 200px;
+        }
+    }
+
+    .middle {
+        width: 100%;
+    }
+
+    .trainers-card {
+        img {
+            height: 90px;
+        }
+
+        &_social {
+            font-size: 9px;
+        }
+
+        &_discription {
+            padding-left: 90px;
+            height: 68px;
+            margin-top: 35px;
+
+            p:nth-of-type(1) {
+                padding-left: 0px;
+            }
+        }
+
+        &_content {
+            font-size: 10px;
+        }
+    }
+
+    .discription {
+        &_subtitle {
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        &_title {
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 10px;
+            line-height: 18px;
+        }
+
+        p:nth-of-type(1),
+        p:nth-of-type(2),
+        p:nth-of-type(3) {
+            margin-bottom: 10px;
+        }
+    }
+
+    // review *************************************
+    .review {
+        max-width: 445px;
+
+        &_next {
+            left: 97%
+        }
+
+        &_card {
+            padding: 20px 15px 30px 15px;
+            margin-right: 0px;
+        }
+    }
+
+    //footer ********************************************************
+    .footer {
+        height: 750px;
+        flex-direction: column;
+        margin-top: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        background-color: white;
+        height: 600px;
+    }
+
+    .contact {
+        background-color: #8373A1;
+        order: 1;
+        margin-top: -0px;
+        padding-left: 130px;
+        padding-top: 30px;
+        margin-right: 0;
+
+        p {
+            color: white;
+
+            a {
+                color: white;
+            }
+
+            i::before {
+                color: white;
+            }
+
+            width: 210px;
+            margin-right: 40px;
+            margin-bottom: 20px;
+        }
+
+        &_social {
+            margin-right: 50px;
+        }
+    }
+
+    .test {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+}
