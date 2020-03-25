@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?kv47it');
+    src: url('../fonts/icomoon.eot?kv47it#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?kv47it') format('truetype'),
+        url('../fonts/icomoon.woff?kv47it') format('woff'),
+        url('../fonts/icomoon.svg?kv47it#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-overline-mark:before {
+    content: "\e915";
+   
+}
+
+.icon-arrow_forward:before {
+    content: "\e914";
+    color: #fff;
+}
+
+.icon-youtube:before {
+    content: "\e900";
+    color: #f2726f;
+}
+
+.icon-twitter:before {
+    content: "\e901";
+    color: #f2726f;
+}
+
+.icon-timer:before {
+    content: "\e902";
+    color: #f2726f;
+}
+
+.icon-smartphone:before {
+    content: "\e903";
+    color: #f2726f;
+}
+
+.icon-shopping_cart:before {
+    content: "\e904";
+    color: #4b4b4b;
+}
+
+.icon-search:before {
+    content: "\e905";
+    color: #4b4b4b;
+}
+
+.icon-place:before {
+    content: "\e906";
+    color: #f2726f;
+}
+
+.icon-phone:before {
+    content: "\e908";
+    color: #f2726f;
+}
+
+.icon-instagram:before {
+    content: "\e909";
+    color: #f2726f;
+}
+
+.icon-facebook:before {
+    content: "\e90a";
+    color: #f2726f;
+}
+
+.icon-expand_more:before {
+    content: "\e90b";
+    color: #f2726f;
+}
+
+.icon-email:before {
+    content: "\e90c";
+    color: #f2726f;
+}
+
+.icon-dog_leash:before {
+    content: "\e90d";
+    color: #5d62b5;
+}
+
+.icon-dog_house:before {
+    content: "\e90e";
+    color: #5d62b5;
+}
+
+.icon-dog_food:before {
+    content: "\e90f";
+    color: #5d62b5;
+}
+
+.icon-dog_duckling:before {
+    content: "\e910";
+    color: #5d62b5;
+}
+
+.icon-chevron_right:before {
+    content: "\e911";
+    color: #fff;
+}
+
+.icon-chevron_left:before {
+    content: "\e912";
+    color: #fff;
+}
+
+.icon-access_time:before {
+    content: "\e913";
+    color: #f2726f;
+}
+
+.icon-close:before {
+    content: "\e907";
+}
