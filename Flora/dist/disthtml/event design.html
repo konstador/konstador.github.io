@@ -1,0 +1,341 @@
+<html lang="ru">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="../css/slick.css">
+<link rel="stylesheet" href="../css/index.css">
+<!-- <link rel="stylesheet" href="../../slick/slick.css">
+<link rel="stylesheet" href="../css/index.css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<title>Events design</title>
+
+<body>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+                <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter"
+                    stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.2" d="M9.6 28.8l12.8-12.8-12.8-12.8">
+                </path>
+            </symbol>
+            <symbol id="icon-burger" viewBox="0 0 32 32">
+                <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter"
+                    stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.3913" d="M0 11.826h32"></path>
+                <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter"
+                    stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.3913" d="M0 20.174h32"></path>
+            </symbol>
+            <symbol id="icon-facebook2" viewBox="0 0 32 32">
+                <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4"
+                    stroke-width="1.2308"
+                    d="M5.538 1.709h20.923c2.379 0 4.308 1.929 4.308 4.308v20.923c0 2.379-1.929 4.308-4.308 4.308h-20.923c-2.379 0-4.308-1.929-4.308-4.308v-20.923c0-2.379 1.929-4.308 4.308-4.308z">
+                </path>
+                <path
+                    d="M19.853 16.246h-2.417v9.6h-3.59v-9.6h-2.154v-2.954h2.154v-1.78c0.003-2.59 1.049-4.128 4.016-4.128h2.446v2.954h-1.641c-1.155 0-1.231 0.444-1.231 1.272v1.682h2.872l-0.454 2.954z">
+                </path>
+            </symbol>
+            <symbol id="icon-vk2" viewBox="0 0 32 32">
+                <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4"
+                    stroke-width="1.2308"
+                    d="M5.538 1.436h20.923c2.379 0 4.308 1.929 4.308 4.308v20.923c0 2.379-1.929 4.308-4.308 4.308h-20.923c-2.379 0-4.308-1.929-4.308-4.308v-20.923c0-2.379 1.929-4.308 4.308-4.308z">
+                </path>
+                <path
+                    d="M23.198 18.726c1.485 1.439 1.794 2.143 1.844 2.23 0.613 1.067-0.68 1.151-0.68 1.151l-2.477 0.037c0 0-0.535 0.11-1.234-0.395-0.928-0.663-2.196-2.394-2.875-2.169-0.691 0.228-0.471 2.042-0.471 2.042s0.006 0.222-0.151 0.401c-0.173 0.187-0.507 0.115-0.507 0.115h-0.713c0 0-2.644 0.012-4.801-2.336-2.349-2.558-4.313-7.343-4.313-7.343s-0.12-0.303 0.008-0.464c0.148-0.182 0.546-0.179 0.546-0.179h2.65c0 0 0.248 0.035 0.426 0.173 0.15 0.113 0.231 0.326 0.231 0.326s0.32 0.891 0.889 1.918c1.106 2.002 1.622 2.44 1.998 2.224 0.546-0.314 0.382-2.829 0.382-2.829s0.011-0.914-0.276-1.321c-0.223-0.317-0.638-0.41-0.822-0.436-0.15-0.017 0.095-0.381 0.412-0.542 0.476-0.242 1.321-0.26 2.315-0.248 0.775 0.009 1.067-0.003 1.067-0.003 0.914 0.231 0.605 1.125 0.605 3.259 0 0.686-0.12 1.65 0.354 1.967 0.203 0.141 0.933 0.162 2.173-2.045 0.591-1.047 1.056-2.030 1.056-2.030s0.1-0.222 0.248-0.314c0.156-0.098 0.362-0.098 0.362-0.098l2.789 0.014c0 0 0.839-0.11 0.972 0.288 0.142 0.415-0.343 1.142-1.48 2.731-1.872 2.61-2.081 2.368-0.529 3.876z">
+                </path>
+            </symbol>
+            <symbol id="icon-whatsapp" viewBox="0 0 32 32">
+                <path
+                    d="M13.905 8.441c-0.141-0.678-0.414-0.743-0.662-0.8-0.202-0.048-0.434-0.093-0.667-0.137-0.229-0.044-0.626-0.023-1.016 0.293-0.393 0.313-1.467 1.050-1.821 2.9-0.353 1.847 0.556 3.874 0.681 4.157 0.128 0.281 1.617 4.625 4.87 6.808 2.705 1.812 3.352 1.679 4 1.739 0.652 0.057 2.237-0.516 2.694-1.339 0.457-0.82 0.601-1.572 0.545-1.746s-0.271-0.311-0.585-0.567c-0.311-0.255-1.851-1.489-2.148-1.677-0.295-0.185-0.515-0.291-0.819 0.039s-1.134 1.050-1.386 1.262c-0.252 0.212-0.458 0.204-0.773-0.048-0.311-0.255-1.357-0.865-2.444-2.4-0.845-1.194-1.311-2.556-1.442-2.972-0.132-0.413 0.088-0.583 0.299-0.738 0.19-0.137 0.434-0.373 0.651-0.559 0.214-0.187 0.301-0.33 0.466-0.559 0.163-0.229 0.147-0.459 0.097-0.664s-0.373-2.191-0.54-2.992z">
+                </path>
+                <path
+                    d="M4.611 25.212l0.562 0.187 0.104-0.313-0.211-0.253-0.455 0.379zM2.831 30.551l-0.562-0.187-0.331 0.993 1.022-0.227-0.129-0.579zM9.523 29.064l0.259-0.533-0.186-0.091-0.202 0.045 0.129 0.578zM30.222 15.737c0 7.855-6.368 14.222-14.222 14.222v1.185c8.509 0 15.407-6.898 15.407-15.407h-1.185zM16 1.514c7.855 0 14.222 6.367 14.222 14.222h1.185c0-8.509-6.898-15.407-15.407-15.407v1.185zM1.778 15.737c0-7.855 6.367-14.222 14.222-14.222v-1.185c-8.509 0-15.407 6.898-15.407 15.407h1.185zM5.066 24.833c-2.054-2.466-3.289-5.636-3.289-9.096h-1.185c0 3.747 1.339 7.184 3.563 9.855l0.911-0.759zM3.393 30.739l1.78-5.339-1.124-0.375-1.78 5.339 1.124 0.375zM9.395 28.486l-6.692 1.487 0.257 1.157 6.692-1.487-0.257-1.157zM16 29.959c-2.231 0-4.34-0.513-6.217-1.427l-0.519 1.066c2.036 0.991 4.322 1.547 6.736 1.547v-1.185z">
+                </path>
+            </symbol>
+            <symbol id="icon-close" viewBox="0 0 20 20">
+                <path
+                    d="M10 8.586l-7.071-7.071-1.414 1.414 7.071 7.071-7.071 7.071 1.414 1.414 7.071-7.071 7.071 7.071 1.414-1.414-7.071-7.071 7.071-7.071-1.414-1.414-7.071 7.071z">
+                </path>
+            </symbol>
+            <symbol id="icon-arrow-down" viewBox="0 0 32 32">
+                <path
+                    d="M27.414 19.414l-10 10c-0.781 0.781-2.047 0.781-2.828 0l-10-10c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0l6.586 6.586v-19.172c0-1.105 0.895-2 2-2s2 0.895 2 2v19.172l6.586-6.586c0.39-0.39 0.902-0.586 1.414-0.586s1.024 0.195 1.414 0.586c0.781 0.781 0.781 2.047 0 2.828z">
+                </path>
+            </symbol>
+            <symbol id="icon-instagram" viewBox="0 0 32 32">
+                <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4"
+                    stroke-width="1.2308"
+                    d="M5.538 1.436h20.923c2.379 0 4.308 1.929 4.308 4.308v20.923c0 2.379-1.929 4.308-4.308 4.308h-20.923c-2.379 0-4.308-1.929-4.308-4.308v-20.923c0-2.379 1.929-4.308 4.308-4.308z">
+                </path>
+                <path<script src="../js/slick.js"></script><script src="../js/slick.js"></script>
+                    d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z">
+                </path>
+                <path
+                    d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+    
+     <div class="menuPopup--middle">
+     <div class="menuPopup">
+         <div class="menuPopup_social social">
+             <a href="#">
+                 <svg class="icon icon-instagram">
+                     <use xlink:href="#icon-instagram"></use>
+                 </svg>
+             </a>
+             <a href="#">
+                 <svg class="icon icon-facebook2">
+                     <use xlink:href="#icon-facebook2"></use>
+                 </svg>
+             </a>
+
+             <a href="#">
+                 <svg class="icon icon-whatsapp">
+                     <use xlink:href="#icon-whatsapp"></use>
+                 </svg>
+             </a>
+             <a href="#">
+                 <svg class="icon icon-vk2">
+                     <use xlink:href="#icon-vk2"></use>
+                 </svg>
+             </a>
+         </div>
+         <button class="menuPopup_close menu-toggle">
+             <svg class="icon icon-close">
+                 <use xlink:href="#icon-close"></use>
+             </svg>
+         </button>
+         <a class="menuPopup_logo" href="index.html">
+             <div class="logo">
+                 <div class="logo_wrap">
+                     <hr>
+                     </hr>
+                     <div>
+                         <img src="../images/logo.png" class="logo_img"></img>
+                     </div>
+                     <hr>
+                     </hr>
+                 </div>
+                 <p class="logo_text">ВЕСНА ВСЕГДА</p>
+             </div>
+         </a>
+
+         <ul class="menuPopup_list">
+             <li>
+                 <a href="wedding.html" class="menu_link-1">свадебная
+                     флористика</a>
+             </li>
+
+             <li><a href="bouquet.html" class="menu_link-2">букеты на любые мероприятия</a></li>
+             <li><a href="composition.html" class="menu_link-3">композиции</a></li>
+             <li><a href="event design.html" class="menu_link-4">оформление мероприятий</a></li>
+         </ul>
+     </div>
+ </div>
+     <div class="formPopup">
+     <button class="formPopup_close form-toggle">
+         <svg class="icon icon-close">
+             <use xlink:href="#icon-close"></use>
+         </svg>
+     </button>
+     <form class="form" action="">
+         <h3 class="form_title">Оставьте свой
+             номер и мы вам
+             перезвоним!</h3>
+         <input type="text" placeholder="Имя" id="text">
+         <input type="phone" placeholder="Телефон" id="tel">
+         <button class="btn-black form_btn">Повоните мне</button>
+     </form>
+ </div>
+    <div class="wrapper">
+        <div class="pic">
+            <a href="index.html">
+                <div class="pic_logo logo">
+                    <div class="logo_wrap">
+                        <hr>
+                        </hr>
+                        <div>
+                            <img src="../images/logo.png" class="logo_img"></img>
+                        </div>
+                        <hr>
+                        </hr>
+                    </div>
+                    <p class="logo_text">ВЕСНА ВСЕГДА</p>
+                </div>
+            </a>
+            <button class="pic_menu btn-menu menu-toggle">
+                <svg class="icon icon-burger">
+                    <use xlink:href="#icon-burger"></use>
+                </svg>
+                <span>Меню</span>
+            </button>
+            <div class="pic_slider">
+                <div class="pic_imgList">
+                    <div class="pic_img">
+                        <img src="../images/flower1.jpg" alt="Image of work">
+                    </div>
+                    <div class="pic_img">
+                        <img src="../images/flower2.jpg" alt="Image of work">
+                    </div>
+                    <div class="pic_img">
+                        <img src="../images/flower3.jpg" alt="Image of work">
+                    </div>
+                    <div class="pic_img">
+                        <img src="../images/flower4.jpg" alt="Image of work">
+                    </div>
+                    <div class="pic_img">
+                        <img src="../images/flower5.jpg" alt="Image of work">
+                    </div>
+                    <div class="pic_img">
+                        <img src="../images/flower6.jpg" alt="Image of work">
+                    </div>
+                    <div class="pic_img">
+                        <img src="../images/flower7.jpg" alt="Image of work">
+                    </div>
+                    <div class="pic_img">
+                        <img src="../images/flower8.jpg" alt="Image of work">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content_middle">
+                <button class="content_menu btn-menu menu-toggle">
+                    <svg class="icon icon-burger">
+                        <use xlink:href="#icon-burger"></use>
+                    </svg>
+                    <span>Меню</span>
+                </button>
+                <div class="content_wrapper">
+                    <h2 class="content_title">оформление
+                        мероприятий
+                    </h2>
+                    <p class="content_text">Мы оформим любое мероприятие в выбранном вами стиле. Рождественские, хехоуин,
+                        день рождение или любое другое мероприятие могут превратиться в настоящую сказку, всего лишь
+                        благодаря оформлению. Полную коллекцию оформлений в разнообразных стилях вы можете посмотреть в
+                        нашем инстаграмме.
+                    </p>
+                    <button class="btn-secondary content_btn form-toggle">Заказать</button>
+                    <div class="content_gallery">
+                        <button class="btn-next content_btn-gallery">
+                            <svg class="icon icon-arrow-right">
+                                <use xlink:href="#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                        <div class="content_slider">
+                            <div>
+                                <img src="../images/flower1-123px.jpg" alt="Images of work">
+                            </div>
+                            <div>
+                                <img src="../images/flower2-123px.jpg" alt="Images of work">
+                            </div>
+                            <div>
+                                <img src="../images/flower3-123px.jpg" alt="Images of work">
+                            </div>
+                            <div>
+                                <img src="../images/flower4-123px.jpg" alt="Images of work">
+                            </div>
+                            <div>
+                                <img src="../images/flower5-123px.jpg" alt="Images of work">
+                            </div>
+                            <div>
+                                <img src="../images/flower6-123px.jpg" alt="Images of work">
+                            </div>
+                            <div>
+                                <img src="../images/flower7-123px.jpg" alt="Images of work">
+                            </div>
+                            <div>
+                                <img src="../images/flower8-123px.jpg" alt="Images of work">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_footer">
+                    <p>Больше фотографий в профиле</p>
+                    <a href="#">
+                        <svg class="icon icon-instagram">
+                            <use xlink:href="#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+         <hr class="line line-works">
+<footer class="footer-works">
+
+    <ul class="footer_list">
+        <li><a href="wedding.html">Cвадебная флористика</a></li>
+        <li><a href="bouquet.html">Букеты на любые мероприятия</a></li>
+        <li><a href="wedding.html">Букеты невесты</a></li>
+        <li><a href="composition.html">Композиции</a></li>
+        <li><a href="event design.html">Оформление мероприятий</a></li>
+    </ul>
+    <div class="footer_social social">
+        <a href="#">
+            <svg class="icon icon-instagram">
+                <use xlink:href="#icon-instagram"></use>
+            </svg>
+        </a>
+        <a href="#">
+            <svg class="icon icon-facebook2">
+                <use xlink:href="#icon-facebook2"></use>
+            </svg>
+        </a>
+
+        <a href="#">
+            <svg class="icon icon-whatsapp">
+                <use xlink:href="#icon-whatsapp"></use>
+            </svg>
+        </a>
+        <a href="#">
+            <svg class="icon icon-vk2">
+                <use xlink:href="#icon-vk2"></use>
+            </svg>
+        </a>
+    </div>
+</footer>
+    </div>
+       <script src="../js/slick.js"></script>
+       <script src="../js/scripts.min.js"></script>
+
+    <!-- <script>
+        $('.pic_imgList').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: false,
+        });
+    </script>
+    <script>
+        $('.content_slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.pic_imgList',
+            dots: false,
+            arrows: true,
+            nextArrow: $('.btn-next'),
+            prevArrow: false,
+            focusOnSelect: true
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('.menuPopup--middle').toggleClass('menuPopup--open')
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.form-toggle').click(function () {
+                $('.formPopup').toggleClass('formPopup--open');
+                $(".wrapper").toggleClass("inner--blur");
+            });
+        });
+    </script> -->
+</body>
+
+</html>
